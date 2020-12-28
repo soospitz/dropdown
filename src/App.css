@@ -1,38 +1,70 @@
-.App {
-  text-align: center;
+* {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  margin: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+li {
+  list-style-type: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.posted i {
+  margin-left: 3px;
+  color: #eb3c62;
+  cursor: pointer;
+}
+#caret {
+  cursor: pointer;
+  color: #777;
+  padding-top: -15px;
+}
+#x {
+  cursor: pointer;
+  color: #eb3c62;
+  padding-top: 5px;
+}
+.listContainer {
+  width: 66.7%;
+  margin: 3px 0px;
+  padding: 0;
+  border: 1px solid #777;
+  border-width: 2px;
+  border-radius: 5px;
+}
+.list {
+  cursor: pointer;
+  font-size: 20px;
+  padding: 12px 16px;
+  border-bottom: 1px solid #ddd;
+}
+.list:hover {
+  background-color: #ddd;
+}
+.dropdown {
+  display: grid;
+  grid-template-columns: 92% 5% 5%;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 5px;
+  height: 25px;
+  width: 65%;
+  padding: 10px;
+  justify-content: flex-start;
+}
+.postedList {
+  display: inline-flex;
+  flex-wrap: wrap;
 }
 
-.App-link {
-  color: #61dafb;
+.posted {
+  display: inline;
+  border-width: 2px;
+  border-radius: 5px;
+  background-color: lightgrey;
+  padding: 5px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.postedContainer {
+  padding: 3px;
 }
